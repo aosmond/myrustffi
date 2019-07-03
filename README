@@ -1,0 +1,6 @@
+This demonstrates an FFI bug between C++ and Rust, where parameters pushed onto the stack are incorrect.
+
+./build-debug.sh
+./run-debug.sh
+
+C++ will print the width, height and repeat horizontal/vertical values it expects. Rust will print everything it received. And they will not match.
